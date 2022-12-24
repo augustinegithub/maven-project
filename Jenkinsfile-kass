@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-/*   
+  
         stage('warning') {
         steps {
             script {
@@ -159,6 +159,6 @@ def notifyUpgrade(String buildResult, String whereAt) {
               color: "danger",
               message: "DEVELOPMENT-Alpha: Upgrade was not successful. Please investigate it immediately.  @ ${env.BUILD_URL}")
     }
-    */
+    
 }
 

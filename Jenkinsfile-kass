@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-                label ("Node2")
-            }
+    agent  any
+                
+            
     options {
       buildDiscarder(logRotator(numToKeepStr: '20'))
       disableConcurrentBuilds()

@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-  
+  /*
         stage('warning') {
         steps {
             script {
@@ -115,7 +115,7 @@ EOF
             }
         }
         
-        
+        */
     
     }
     post {

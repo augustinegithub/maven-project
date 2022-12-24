@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-
+/*   
         stage('warning') {
         steps {
             script {
@@ -68,7 +68,7 @@ pipeline {
             }
         }
        
-       /*
+       
        stage('Buiding docker images') {
             steps {
                sh '''
@@ -115,7 +115,7 @@ EOF
             }
         }
         
-        */
+        
     
     }
     post {
@@ -159,5 +159,6 @@ def notifyUpgrade(String buildResult, String whereAt) {
               color: "danger",
               message: "DEVELOPMENT-Alpha: Upgrade was not successful. Please investigate it immediately.  @ ${env.BUILD_URL}")
     }
+    */
 }
 

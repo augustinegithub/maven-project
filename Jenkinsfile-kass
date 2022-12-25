@@ -1,6 +1,6 @@
 pipeline {
     agent  any
-                
+        
             
     options {
       buildDiscarder(logRotator(numToKeepStr: '20'))
@@ -15,7 +15,8 @@ pipeline {
     string(name: 'WARNTIME',
            defaultValue: '5',
            description: '''Warning time (in minutes) before starting upgrade''')
-  }
+    }
+
     stages {
         stage('Valading code syntax') {
             steps {
@@ -39,10 +40,7 @@ pipeline {
             }
         }
 
-
-
-
-               
+            
 
         
          stage('SonarQube analysis') {
@@ -63,10 +61,7 @@ pipeline {
             }
         }
 
-
-
-
-        
+       
 
  
   }

@@ -43,7 +43,7 @@ pipeline {
         }
 
             
-/*
+
         
          stage('SonarQube analysis') {
             agent {
@@ -64,7 +64,7 @@ pipeline {
         }
 
        
-*/
+
  
   }
    post {

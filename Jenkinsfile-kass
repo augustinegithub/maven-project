@@ -42,14 +42,7 @@ pipeline {
 
 
 
-        stage('Sonarqube analysis') {
-            steps {
-                echo 'Hello World'
-                sh 'sleep 1'
-            }
-        }
-
-          
+               
 
         
          stage('SonarQube analysis') {
@@ -76,7 +69,7 @@ pipeline {
         
 
  
-   }
+  }
    post {
    
    success {
@@ -95,11 +88,11 @@ pipeline {
     cleanup {
       deleteDir()
     }
-}
+
+    }
 
 
 	
 
  
 }
-
